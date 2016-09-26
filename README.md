@@ -1,3 +1,3 @@
 # frontend-thoughts
 
-[Getting Started](Example – EITI/Getting started.md)
+[Getting Started](Example%20-%20EITI/Getting%20started.md)
