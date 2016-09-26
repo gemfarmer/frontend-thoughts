@@ -37,3 +37,29 @@ Because Jekyll is often used as a blogging platform, one of its defining feature
 ### Collections
 
 When a site has a set of pages that can be categorized, Jekyll has a convenient [collections](https://jekyllrb.com/docs/collections/) feature that allows you to group together files that share a common URL structure. Examples of this for EITI are `case-studies`, `how-it-works`, `explore`, and `downloads`.
+
+
+## Layouts
+
+When we are creating a page, we need to specify a layout, like in the above example. When a layout is referenced for a page, Jekyll inserts the contents of that page into the `{{ content }}` defined in that layout and builds it!
+
+For example, the base layout that EITI is uses can be found in `_layouts` as [default.html](https://github.com/18F/doi-extractives-data/blob/dev/_layouts/default.html). In Jekyll, if no layout is specified in a page, it will actually look for `default.html`, and render accordingly if available.
+
+For the EITI homepage, we can find this reference in the front matter of [index.html](https://github.com/18F/doi-extractives-data/blob/dev/index.html#L2). When Jekyll builds the site, it will plop the entire contents of this file into the [{{ content }} brackets here](https://github.com/18F/doi-extractives-data/blob/dev/_layouts/default.html#L63)
+
+## Liquid
+
+So that is all well and good, but what in the heck are those double curly braces all about?? By default, Jekyll uses a templating language called [Liquid](https://shopify.github.io/liquid/), that was created by Shopify for use in their websites. There are a bunch of templating engines out there, and while Liquid is probably not my favorite, it is what Jekyll uses, and has a bunch of nice features. Those features include, but are not limited to: includes, logic, variables, and filters. Let's unpack some of that.
+
+### Includes
+
+### Logic
+
+### Variables
+
+### Filters
+
+
+
+
+
